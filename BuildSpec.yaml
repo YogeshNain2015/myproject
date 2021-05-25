@@ -1,7 +1,5 @@
 version: 0.2
 name: Python application
-proxy:
-  upload-artifacts: yes
 phases:
   pre_build:
     commands:
@@ -27,4 +25,7 @@ phases:
       - echo Entered the post_build phase...
       - echo $(pwd)
       - echo Build completed on `date`
+artifacts:
+  files:
+    - '**/*'
         
