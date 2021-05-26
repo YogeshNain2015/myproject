@@ -11,6 +11,7 @@ python manage.py collectstatic --no-input
 
 # Set permission for all files
 sudo chown -R www-data:www-data /usr/local/bin
-
+sudo chown :www-data /usr/local/bin/myproject
+sudo chown :www-data /usr/local/bin/myproject/db.sqlite3
 # Restart services
 sudo service apache2 restart
