@@ -5,9 +5,10 @@ sudo cp -a $(pwd) /usr/local/bin/myproject
 cd /usr/local/bin/myproject
 virtualenv myenv
 source ./myenv/bin/activate
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py collectstatic --no-input
+pip3 install -r requirements.txt
+python3 manage.py migrate
+python3 manage.py collectstatic --no-input
+python3 manage.py runserver
 
 # Set permission for all files
 sudo chown -R www-data:www-data /usr/local/bin
