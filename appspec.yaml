@@ -1,9 +1,9 @@
 version: 0.0
 os: linux
 files:
-  - source: /build/index.html
-    destination: /var/www/html
-    runas: ubuntu
+  - source: /build/index.html/
+    destination: /var/www/html/index.html
+    runas: root
 hooks:
   BeforeInstall:
       - location: scripts/before_install.sh
