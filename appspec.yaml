@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /static/admin
-    destination: /var/www
+  - source: /build/index.html
+    destination: /var/www/html
     runas: ubuntu
 hooks:
   BeforeInstall:
