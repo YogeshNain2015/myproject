@@ -1,10 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: $(pwd)
-    destination: /usr/local/bin/myproject
-  - source: $(pwd)
-    destination: /etc/apache2/sites-available/000-default.conf
+  - source: /static/admin
+    destination: /var/www/html/
     runas: ubuntu
 hooks:
   BeforeInstall:
