@@ -8,7 +8,7 @@ source ./myenv/bin/activate
 pip3 install -r requirements.txt
 python3 manage.py migrate
 python3 manage.py collectstatic --no-input
-python3 manage.py runserver
+python3 manage.py runserver 0.0.0.0:80
 
 # Set permission for all files
 sudo chown -R www-data:www-data /usr/local/bin
